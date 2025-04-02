@@ -5,7 +5,7 @@ FROM php:7.4-cli
 COPY proxy.php /var/www/html/proxy.php
 
 # Expose port 80 for the web server
-EXPOSE 80
+EXPOSE 8083
 
 # Use CMD to start the PHP built-in web server
-CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/html"]
+CMD ["php", "-S", "0.0.0.0:8083", "-t", "/var/www/html"]
