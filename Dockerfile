@@ -8,4 +8,4 @@ COPY proxy.php /var/www/html/proxy.php
 EXPOSE 8083
 
 # Use CMD to start the PHP built-in web server
-CMD ["php", "-S", "proxy.fahrettinrizaergin.com:8083", "/var/www/html/proxy.php"]
+CMD ["php", "-S", "proxy.fahrettinrizaergin.com:8083", "-t", "/var/www/html"]
